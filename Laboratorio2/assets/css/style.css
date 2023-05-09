@@ -1,0 +1,155 @@
+/* Estilos generales */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: sans-serif;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+  
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .col-12 {
+	flex-basis: 100%;
+  }
+  
+  .col-md-6 {
+	flex-basis: calc(50% - 20px);
+	margin: 10px;
+  }
+  
+  .col-lg-4 {
+	flex-basis: calc(33.33% - 20px);
+	margin: 10px;
+  }
+  
+  a {
+	text-decoration: none;
+	color: #333;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  button {
+	border: none;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+	background-color: #666;
+  }
+  
+  /* Estilos del header */
+  
+  header {
+	background-color: #f5d041;
+	padding: 10px 0;
+  }
+  
+  nav {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  nav ul {
+	display: flex;
+  }
+  
+  nav ul li {
+	margin-left: 10px;
+  }
+  
+  nav ul li:first-child {
+	margin-left: 0;
+  }
+  
+  nav a:hover {
+	color: #f5d041;
+  }
+  
+  /* Estilos de los productos */
+  
+  .productos {
+	padding: 50px 0;
+  }
+  
+  .card {
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+	max-width: 100%;
+  }
+  
+  .agregar-carrito {
+	margin-top: 10px;
+  }
+  
+  /* Estilos del footer */
+  
+  footer {
+	background-color: #4a4e69;
+	padding: 50px 0;
+	color: #fff;
+  }
+  
+  footer h4 {
+	margin-bottom: 10px;
+  }
+  
+  footer ul {
+	margin-bottom: 20px;
+  }
+  
+  footer ul li {
+	margin-bottom: 5px;
+  }
+  
+  footer ul li i {
+	margin-right: 10px;
+  }
+  
+  .redes-sociales {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .redes-sociales li {
+	margin: 0 10px;
+  }
+  
+  .redes-sociales li a {
+	color: #fff;
+  }
+  
+  .redes-sociales li a:hover {
+	color: #f5d041;
+  }
