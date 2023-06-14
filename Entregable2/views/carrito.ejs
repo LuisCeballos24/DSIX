@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carrito de Compras</title>
+</head>
+<body>
+<h1>Carrito de Compras</h1>
+<% if (!productos || productos.length == 0) { %>
+<p>Tu carrito está vacío.</p>
+<% } else { %>
+<% productos.forEach((producto) => { %>
+<div>
+<h2><%= producto.nombre %></h2>
+<p><%= producto.descripcion %></p>
+<p>Precio: <%= producto.precio %></p>
+</div>
+<% }); %>
+<form action="/paypal/pay" method="POST">
+<input type="submit" value="Pagar con PayPal">
+</form>
+<% } %>
+</body>
+</html>
